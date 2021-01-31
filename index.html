@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title></title>
+  </head>
+  <body>
+    <div class="wrapper flex">
+      <div id="app_container">
+
+        <!-- SIDEBAR -->
+        <div class="sidebar">
+          <nav class="general-options">
+            <div class="profile-avatar">
+              <img src="images/avatar_io.jpg" alt="">
+            </div>
+            <img class="nav-icone cursor-pointer" src="images/data.svg" alt="">
+            <img class="nav-icone cursor-pointer" src="images/chat.svg" alt="">
+            <img class="nav-icone cursor-pointer" src="images/menu.svg" alt="">
+          </nav>
+          <div class="notifiche-container">
+            <div class="bell">
+              <i class="fas fa-bell-slash cursor-pointer"></i>
+            </div>
+            <div class="notifiche">
+              <h5>Ricevi notifiche di nuovi messaggi</h5>
+              <h6 class="sottotitolo cursor-pointer opacity-08 text-underline">attiva notifiche desktop</h6>
+            </div>
+          </div>
+          <div class="search-bar">
+            <div class="search">
+              <img class="nav-icone cursor-pointer"src="images/search.svg" alt="">
+              <input id="search_bar_input" type="text" name="" placeholder="cerca o inizia nuova chat">
+            </div>
+          </div>
+          <div class="lista-contatti">
+            <div class="contatto">
+              <div class="avatar-chat">
+                <img src="images/avatar_1.jpg" alt="">
+              </div>
+              <div class="name">
+                <h5>Michele</h5>
+              </div>
+            </div>
+            <div class="contatto">
+              <div class="avatar-chat">
+                <img src="images/avatar_2.jpg" alt="">
+              </div>
+              <div class="name">
+                <h5>Fabio</h5>
+              </div>
+            </div>
+
+            <div class="contatto">
+              <div class="avatar-chat">
+                <img src="images/avatar_3.jpg" alt="">
+              </div>
+              <div class="name">
+                <h5>Samuele</h5>
+              </div>
+            </div>
+            <div class="contatto">
+              <div class="avatar-chat">
+                <img src="images/avatar_4.jpg" alt="">
+              </div>
+              <div class="name">
+                <h5>Luisa</h5>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!-- END SIDEBAR -->
+        <div class="conversation">
+          <nav class="nav-conversation">
+            <div class="image-conversation">
+              <img src="images/avatar_1.jpg" alt="">
+            </div>
+            <div class="name-conversation">
+              <h5>Michele</h5>
+              <h6 class="opacity-08">Ultimo accesso oggi alle 15:30</h6>
+            </div>
+            <div class="icones-conversation">
+              <img class="nav-icone" src="images/search.svg" alt="">
+              <img class="nav-icone" src="images/clip.svg" alt="">
+              <img class="nav-icone" src="images/menu.svg" alt="">
+            </div>
+          </nav>
+          <div class="chat-room">
+
+          </div>
+          <div class="write">
+            <div class="write-emoji-left">
+              <i class="far fa-smile"></i>
+            </div>
+            <div class="writing-message">
+              <input id="message_input" type="text" placeholder="Scrivi un messaggio" value="">
+            </div>
+            <div class="write-microphone">
+              <i class="fas fa-microphone-alt"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/script.js" charset="utf-8"></script>
+  </body>
+</html>

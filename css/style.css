@@ -1,0 +1,282 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+/* UTILITY CLASS */
+.cursor-pointer{
+  cursor: pointer;
+}
+
+.opacity-08{
+  opacity: 0.8;
+}
+
+.text-underline{
+  text-decoration: underline;
+}
+/* END UTILITY CLASS */
+
+.wrapper{
+  min-width: 950px;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(360deg, #DBDBD3 80%, #009788 20%);
+  align-items: center;
+  justify-content: center;
+}
+
+#app_container{
+  min-width: 950px;
+  width: 80%;
+  height: 95%;
+  overflow: hidden;
+  margin:0 auto;
+  position: relative;
+}
+
+/* SIDEBAR */
+.sidebar{
+  float: left;
+  width: 35%;
+}
+
+nav.general-options{
+  position: relative;
+  height: 65px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  border-right: 1px solid rgba(0, 0, 0, 0.08);
+  background: #EEEEEE;
+}
+
+nav .profile-avatar{
+  overflow: hidden;
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+  border-radius: 100%;
+  background: white;
+}
+
+.profile-avatar img{
+  width: 45px;
+  height: 45px;
+}
+
+.nav-icone{
+  width: 25px;
+  height: 25px;
+  margin-right: 20px;
+}
+
+.notifiche-container{
+  position: relative;
+  height: 65px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  border-right: 1px solid rgba(0, 0, 0, 0.08);
+  background: lightblue;
+}
+
+.bell{
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+.bell i{
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  font-size: 20px;
+  color: lightblue;
+}
+
+.notifiche{
+  position: absolute;
+  top:0;
+  left:30%;
+  text-align: left;
+}
+
+
+.search-bar{
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid lightgrey;
+  background: #FBFBFB;
+}
+.search{
+  overflow: hidden;
+  position: relative;
+  padding-left: 20px;
+  width: 95%;
+  height: 35px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 60px;
+  border-style: none;
+  border-radius: 5px;
+  background: white;
+}
+
+#search_bar_input{
+  height: 100%;
+  width: 90%;
+  font-size: 14px;
+  font-weight: bold;
+  border-style: none;
+
+}
+
+.lista-contatti{
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: calc(100vh - 125px);
+}
+.contatto{
+  position: relative;
+  height: 65px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  border-right: 1px solid rgba(0, 0, 0, 0.08);
+  background: #ffffff;
+}
+.avatar-chat{
+  overflow: hidden;
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+  border-radius: 100%;
+  background: #eeeeee;
+  display: inline-block;
+}
+.avatar-chat img{
+  width: 50px;
+  height: 50px;
+}
+.name{
+  display: inline-block;
+  float: left;
+}
+.name h5{
+  position:absolute;
+  top:0;
+  left:25%;
+}
+/* END SIDEBAR */
+
+/* MAIN */
+.conversation{
+  float: left;
+  height: 100vh;
+  width: 65%;
+}
+
+nav.nav-conversation{
+  height: 25%;
+  background: #eeeeee;
+}
+
+nav .image-conversation{
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 100%;
+  background: white;
+  float: left;
+
+}
+
+nav .image-conversation img{
+  width: 50px;
+  height: 50px;
+
+}
+
+.name-conversation{
+  display: inline-block;
+  float: left;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 60%;
+}
+
+
+.icones-conversation{
+  float: left;
+  height: 65px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-left:30px;
+}
+
+.chat-room{
+  background-color: #eeeeee;
+  width: 100%;
+  height:60%;
+
+}
+
+
+.write{
+  float: left;
+  height:15%;
+  width: 100%;
+  background-color: lightgrey;
+  
+}
+
+.write-emoji{
+  display: inline-block;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.write-emoji i{
+  font-size: 20px;
+}
+.writing-message{
+  flex-grow: 2;
+  margin-right: 20px;
+  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#message-message-input{
+  height: 40px;
+  font-size: 15px;
+  border-radius: 25px;
+  border-style: none;
+  padding-left: 20px;
+  width: 100%;
+
+}
+
+.write-microphone{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
