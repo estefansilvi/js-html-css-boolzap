@@ -232,7 +232,7 @@ nav .image-conversation{
   display: flex;
   align-items: center;
   float: left;
-  width: 20%;
+  width: 10%;
 }
 nav .image-conversation img{
   width: 50px;
@@ -245,7 +245,7 @@ nav .image-conversation img{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width:60%;
+  width:80%;
 }
 
 
