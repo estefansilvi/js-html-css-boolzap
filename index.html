@@ -14,6 +14,8 @@
 
         <!-- SIDEBAR -->
         <div class="sidebar">
+
+          <!--  dati personali -->
           <nav class="general-options">
             <div class="profile-avatar">
               <img src="images/avatar_io.jpg" alt="">
@@ -22,6 +24,9 @@
             <img class="nav-icone cursor-pointer" src="images/chat.svg" alt="">
             <img class="nav-icone cursor-pointer" src="images/menu.svg" alt="">
           </nav>
+          <!-- end nav dati personali -->
+
+          <!-- gestione notifiche -->
           <div class="notifiche-container">
             <div class="bell">
               <i class="fas fa-bell-slash cursor-pointer"></i>
@@ -31,12 +36,18 @@
               <h6 class="sottotitolo cursor-pointer opacity-08 text-underline">attiva notifiche desktop</h6>
             </div>
           </div>
+          <!-- end gestione notifiche -->
+
+          <!-- search bar -->
           <div class="search-bar">
             <div class="search">
               <img class="nav-icone cursor-pointer"src="images/search.svg" alt="">
               <input id="search_bar_input" type="text" name="" placeholder="cerca o inizia nuova chat">
             </div>
           </div>
+          <!-- end search bar -->
+
+          <!--  lista contatti -->
           <div class="lista-contatti">
             <div class="contatto">
               <div class="avatar-chat">
@@ -72,14 +83,14 @@
               </div>
             </div>
           </div>
-
+          <!-- end lista contatti -->
         </div>
         <!-- END SIDEBAR -->
         <div class="conversation">
+
           <nav class="nav-conversation">
             <div class="image-conversation">
               <div class="image-avatar">
-
                 <img src="images/avatar_1.jpg" alt="">
               </div>
             </div>
@@ -93,10 +104,20 @@
               <img class="nav-icone cursor-pointer" src="images/menu.svg" alt="">
             </div>
           </nav>
-          <div class="chat-room">
 
+          <div class="chat-room">
+            <div class="message-send opacity-08">
+              <p class="text-message-send">ciao, come stai???</p>
+              <span class="time-message">10:30<i class="check fas fa-check-double"></i></span>
+            </div>
+            <div class="message-received opacity-08 ">
+              <p class="text-message-received">tutto bene grazie...</p>
+              <span class="time-message">10:50<i class="check fas fa-check-double"></i></span>
+
+            </div>
           </div>
-          <div class="write">
+
+          <div class="writing">
             <div class="write-emoji">
               <i class="far fa-smile cursor-pointer opacity-08"></i>
             </div>
@@ -107,6 +128,7 @@
               <i class="fas fa-microphone-alt cursor-pointer opacity-08"></i>
             </div>
           </div>
+
         </div>
       </div>
     </div>
