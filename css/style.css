@@ -16,6 +16,7 @@
 .text-underline{
   text-decoration: underline;
 }
+
 /* END UTILITY CLASS */
 
 .wrapper{
@@ -28,7 +29,7 @@
   position: relative;
 }
 
-#app_container{
+#app-container{
   min-width: 950px;
   width: 80%;
   height: 95%;
@@ -190,14 +191,13 @@ nav .profile-avatar{
   width: 50px;
   height: 50px;
 }
-.name{
+.name-contatto{
   display: inline-block;
   float: left;
-}
-.name h5{
+  padding-top:10px;
   position:absolute;
   top:0;
-  left:25%;
+  left:20%;
 }
 /* end elenco contatti*/
 
@@ -277,7 +277,7 @@ nav .image-conversation img{
   position: relative;
   flex-grow: 1;
 }
-.message-send{
+.send{
   width: 40%;
   padding: 5px;
   max-width: 600px;
@@ -286,19 +286,17 @@ nav .image-conversation img{
   position:absolute;
   top:20px;
   right: 20px;
-
-}
-.text-message-send{
-   color:white;
-   font-size: 15px;
+  color:white;
+  font-size: 15px;
  }
+
 .time-message{
    color:lightgrey;
    float: right;
    font-size: 10px;
  }
 
-.message-received{
+.received{
    width: 40%;
    padding: 5px;
    max-width: 600px;
@@ -307,18 +305,10 @@ nav .image-conversation img{
    position:absolute;
    top:90px;
    left:20px;
-}
-.text-message-received{
    color:#000000;
    font-size: 15px;
  }
 
-.check{
-  color:lightgrey;
-  font-size: 8px;
-  float:right;
-  padding-left: 5px;
-}
 /* end area conversazioni -chat- */
 
 /* scrittura messaggi*/

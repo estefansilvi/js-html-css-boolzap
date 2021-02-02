@@ -5,12 +5,13 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
     <link rel="stylesheet" href="css/style.css">
     <title></title>
   </head>
   <body>
     <div class="wrapper flex">
-      <div id="app_container">
+      <div id="app-container">
 
         <!-- SIDEBAR -->
         <div class="sidebar">
@@ -49,39 +50,15 @@
 
           <!--  lista contatti -->
           <div class="lista-contatti">
-            <div class="contatto">
-              <div class="avatar-chat">
-                <img src="images/avatar_1.jpg" alt="">
-              </div>
-              <div class="name">
-                <h5>Michele</h5>
-              </div>
+            <div v-for="(i,index) in contacts" class="contatto" @click="selectedContatto(i)">
+              <div  class="avatar-chat" >
+                <img v-bind:src="'images/avatar' + contacts[index].avatar + '.jpg'" class="cursor-pointer" />
             </div>
-            <div class="contatto">
-              <div class="avatar-chat">
-                <img src="images/avatar_2.jpg" alt="">
-              </div>
-              <div class="name">
-                <h5>Fabio</h5>
-              </div>
+            <div class="name-contatto cursor-pointer">
+              <span>{{contacts[index].name}}</span>
             </div>
+          </div>
 
-            <div class="contatto">
-              <div class="avatar-chat">
-                <img src="images/avatar_3.jpg" alt="">
-              </div>
-              <div class="name">
-                <h5>Samuele</h5>
-              </div>
-            </div>
-            <div class="contatto">
-              <div class="avatar-chat">
-                <img src="images/avatar_4.jpg" alt="">
-              </div>
-              <div class="name">
-                <h5>Luisa</h5>
-              </div>
-            </div>
           </div>
           <!-- end lista contatti -->
         </div>
@@ -91,12 +68,12 @@
           <nav class="nav-conversation">
             <div class="image-conversation">
               <div class="image-avatar">
-                <img src="images/avatar_1.jpg" alt="">
+                <img v-bind:src="'images/avatar' + imageSelezionata  + '.jpg'" />
               </div>
             </div>
             <div class="name-conversation">
-              <h5>Michele</h5>
-              <h6 class="opacity-08">Ultimo accesso oggi alle 15:30</h6>
+              <h5>{{utenteSelezionato}}</h5>
+              <h6 class="opacity-08">Ultimo accesso alle ore {{utlimoAccesso}}</h6>
             </div>
             <div class="icones-conversation">
               <img class="nav-icone cursor-pointer" src="images/search.svg" alt="">
@@ -106,14 +83,9 @@
           </nav>
 
           <div class="chat-room">
-            <div class="message-send opacity-08">
-              <p class="text-message-send">ciao, come stai???</p>
-              <span class="time-message">10:30<i class="check fas fa-check-double"></i></span>
-            </div>
-            <div class="message-received opacity-08 ">
-              <p class="text-message-received">tutto bene grazie...</p>
-              <span class="time-message">10:50<i class="check fas fa-check-double"></i></span>
-
+            <div v-for="(element,x) in contacts[indexAttuale].messages" v-bind:class=" + contacts[indexAttuale].messages[x].status">
+              {{contacts[indexAttuale].messages[x].text}} <br>
+              <div class="time-message">{{createDate(indexAttuale,x)}}</div>
             </div>
           </div>
 
