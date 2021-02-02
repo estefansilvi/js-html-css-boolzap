@@ -7,7 +7,7 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
     <link rel="stylesheet" href="css/style.css">
-    <title></title>
+    <title>BoolzApp Web</title>
   </head>
   <body>
     <div class="wrapper flex">
@@ -83,9 +83,9 @@
           </nav>
 
           <div class="chat-room">
-            <div v-for="(element,x) in contacts[indexAttuale].messages" v-bind:class=" + contacts[indexAttuale].messages[x].status">
+            <div v-for="(element,x) in contacts[indexAttuale].messages" >
               {{contacts[indexAttuale].messages[x].text}} <br>
-              <div class="time-message">{{createDate(indexAttuale,x)}}</div>
+              <!--<div class="time-message">{{createChat(indexAttuale,x)}}</div>-->
             </div>
           </div>
 
