@@ -124,7 +124,7 @@ methods:{
     setTimeout(function() {
       activeContact.messages.push({
         date: ' 15:50:00',
-        text: 'ok',
+        text: 'hai perfettamente ragione!!',
         status: 'received'
       });
     }, 1000)
@@ -140,8 +140,6 @@ methods:{
       return name.toLowerCase().startsWith(nameSearch)
     }
   },
-
-
 }
 });
 

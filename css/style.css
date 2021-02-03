@@ -26,7 +26,9 @@
 .margin-0{
   margin:0;
 }
-
+.mrgin-top-10{
+  margin-top:10px;
+}
 .float-right{
   float: right;
 }
@@ -209,7 +211,7 @@ nav .profile-avatar{
 .name-contatto{
   display: inline-block;
   float: left;
-  padding-top:10px;
+  padding:10px 10px;
   position:absolute;
   top:0;
   left:20%;
@@ -283,32 +285,6 @@ nav .image-conversation img{
   float: left;
 }
 
-}
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-
-.dropdown-content {
-    display: block;
-    position: absolute;
-    top:20px;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    overflow: auto;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-}
-
-.dropdown-content p {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-
-.dropdown a:hover {background-color: #f1f1f1}
-
-.show {display:block;}
 /* end dati ricevente -chat- */
 
 
@@ -325,7 +301,8 @@ nav .image-conversation img{
   padding: 5px;
   margin:15px;
   border-radius: 15px;
-  background-color: green;
+  background-color: #90ee90;
+  
   clear: both;
   float: right;
   max-width: 50%;
@@ -345,6 +322,7 @@ nav .image-conversation img{
    margin:15px;
    border-radius: 15px;
    background-color: #ffffff;
+   opacity:0.9;
    clear: both;
   float: left;
   max-width: 50%;

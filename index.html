@@ -33,7 +33,7 @@
               <i class="fas fa-bell-slash cursor-pointer"></i>
             </div>
             <div class="notifiche">
-              <h5 class="margin-0">Ricevi notifiche di nuovi messaggi</h5>
+              <h5 class="margin-0 padding-top-5">Ricevi notifiche di nuovi messaggi</h5>
               <h6 class="sottotitolo cursor-pointer opacity-08 margin-0 padding-top-5 text-underline">attiva notifiche desktop</h6>
             </div>
           </div>
@@ -50,7 +50,7 @@
 
           <!--  lista contatti -->
           <div class="lista-contatti">
-            <div v-for="(i,index) in contacts"  v-if="search(i.name)"   class="contatto" @click="selectedChat(index);selectedContatto(i)">
+            <div v-for="(i,index) in contacts"  v-if="search(i.name)"   class="contatto mrgin-top-10" @click="selectedChat(index);selectedContatto(i)">
               <div  class="avatar-chat" >
                 <img v-bind:src="'images/avatar' + contacts[index].avatar + '.jpg'" class="cursor-pointer" />
             </div>
@@ -84,13 +84,9 @@
           </nav>
 
           <div class="chat-room">
-            <div v-for="element in contacts[indexAttuale].messages" :class="element.status">
+            <div v-for="element in contacts[indexAttuale].messages" :class="element.status" >
               {{element.text}}
-              <i class="fas fa-angle-down cursor-pointer float-right dropdown" @click=""></i>
-              <div class="dropdown-content">
-                <p>Info</p>
-                <p>Delete message</p>
-              </div>
+              <i class="fas fa-angle-down cursor-pointer float-right "></i>
             </div>
           </div>
 
