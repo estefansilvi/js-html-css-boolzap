@@ -50,7 +50,7 @@
 
           <!--  lista contatti -->
           <div class="lista-contatti">
-            <div v-for="(i,index) in contacts" class="contatto" @click="selectedContatto(i)">
+            <div v-for="(i,index) in contacts" class="contatto" @click="selectedChat(index)">
               <div  class="avatar-chat" >
                 <img v-bind:src="'images/avatar' + contacts[index].avatar + '.jpg'" class="cursor-pointer" />
             </div>
@@ -83,9 +83,7 @@
           </nav>
 
           <div class="chat-room">
-            <div v-for="(element,x) in contacts[indexAttuale].messages" >
-              {{contacts[indexAttuale].messages[x].text}} <br>
-              <!--<div class="time-message">{{createChat(indexAttuale,x)}}</div>-->
+            <div v-for="element in contacts[indexAttuale].messages" :class="element.status">{{element.text}}
             </div>
           </div>
 
@@ -94,7 +92,7 @@
               <i class="far fa-smile cursor-pointer opacity-08"></i>
             </div>
             <div class="writing-message">
-              <input id="message-input" type="text" placeholder="Scrivi un messaggio" value="">
+              <input class="message-input"  @keyup.enter="sendMessage" v-model="newMessage" type="text" placeholder="Scrivi un messaggio" value="">
             </div>
             <div class="write-microphone">
               <i class="fas fa-microphone-alt cursor-pointer opacity-08"></i>

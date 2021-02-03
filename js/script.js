@@ -101,20 +101,34 @@ methods:{
       var dateTimeArray =lastMessage.split(' ');
       var createdDate = dateTimeArray[1].split(':',2);
       this.utenteSelezionato = i.name;
-      this.indexAttuale = this.contacts[i];
       this.imageSelezionata = i.avatar;
       this.utlimoAccesso = createdDate[0] +':'+ createdDate[1];
-    }
-  },
-  createdChat : function(indexAttuale,x){
-        var createdChat = this.contacts[indexAttuale].messages[x].date.split(' ')[1].split(':',2);
-        return createdChat[0] +':'+ createdChat[1];
-  },
-  getMessageClass : function(i){
-    let conctactAttuale = this.contacts[this.indexAttuale];
-    console.log(conctactAttuale)
-  }
+    },
 
+    selectedChat: function (index) {
+     this.indexAttuale = index;
+    },
+
+    sendMessage: function () {
+    let activeContact = this.contacts[this.indexAttuale];
+    console.log(activeContact)
+    activeContact.messages.push(  {
+          date: ' 15:50:00',
+          text: this.newMessage,
+          status: 'sent'
+    }),
+
+    this.newMessage = '';
+
+    setTimeout(function() {
+      activeContact.messages.push({
+        date: '10/01/2020 15:50:00',
+        text: 'ok',
+        status: 'received'
+      });
+    }, 1000)
+  }
+}
 });
 
 Vue.config.devtools = true;

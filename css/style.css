@@ -256,6 +256,11 @@ nav .image-conversation img{
   width:80%;
 }
 
+.name-conversation h5{
+  margin:0;
+  padding:5px 0;
+}
+
 
 .icones-conversation{
   float: left;
@@ -277,15 +282,15 @@ nav .image-conversation img{
   position: relative;
   flex-grow: 1;
 }
-.send{
+.sent{
   width: 40%;
   padding: 5px;
-  max-width: 600px;
+  margin:15px;
   border-radius: 15px;
   background-color: green;
-  position:absolute;
-  top:20px;
-  right: 20px;
+  clear: both;
+  float: right;
+  max-width: 50%;
   color:white;
   font-size: 15px;
  }
@@ -299,12 +304,12 @@ nav .image-conversation img{
 .received{
    width: 40%;
    padding: 5px;
-   max-width: 600px;
+   margin:15px;
    border-radius: 15px;
    background-color: #ffffff;
-   position:absolute;
-   top:90px;
-   left:20px;
+   clear: both;
+  float: left;
+  max-width: 50%;
    color:#000000;
    font-size: 15px;
  }
@@ -341,7 +346,7 @@ nav .image-conversation img{
   width: 60%;
   text-align: center;
 }
-#message-input{
+.message-input{
   width: 90%;
   font-size: 25px;
   border-radius: 25px;
