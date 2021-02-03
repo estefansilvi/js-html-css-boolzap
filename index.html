@@ -50,7 +50,7 @@
 
           <!--  lista contatti -->
           <div class="lista-contatti">
-            <div v-for="(i,index) in contacts" class="contatto" @click="selectedChat(index)">
+            <div v-for="(i,index) in contacts" class="contatto" @click="selectedChat(index);selectedContatto(i)">
               <div  class="avatar-chat" >
                 <img v-bind:src="'images/avatar' + contacts[index].avatar + '.jpg'" class="cursor-pointer" />
             </div>
