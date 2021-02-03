@@ -9,6 +9,7 @@ var app = new Vue({
     ultimoAccesso:'16:15',
     indexAttuale:0,
     newMessage:'',
+    searchContact:'',
     contacts: [
   	{
   		name: 'Michele',
@@ -127,8 +128,23 @@ methods:{
         status: 'received'
       });
     }, 1000)
+  },
+
+  lastMessage : function(index){
+      return  this.contacts[index].messages[this.contacts[index].messages.length - 1].text;
+  },
+
+  search: function (name) {
+    let nameSearch = this.searchContact;
+    if (name.toLowerCase().startsWith(nameSearch)) {
+      return name.toLowerCase().startsWith(nameSearch)
+    }
   }
 }
 });
+
+
+
+
 
 Vue.config.devtools = true;

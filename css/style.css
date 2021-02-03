@@ -17,6 +17,15 @@
   text-decoration: underline;
 }
 
+.block{
+  display: block;
+}
+.padding-top-5{
+  padding-top: 5px;
+}
+.margin-0{
+  margin:0;
+}
 /* END UTILITY CLASS */
 
 .wrapper{
@@ -93,6 +102,7 @@ nav .profile-avatar{
   align-items: center;
   border-right: 1px solid rgba(0, 0, 0, 0.08);
   background: lightblue;
+  padding:5px;
 }
 
 .bell{
@@ -119,6 +129,7 @@ nav .profile-avatar{
   top:0;
   left:30%;
   text-align: left;
+  padding: 3px 0;
 }
 /* end notifiche */
 
@@ -152,6 +163,7 @@ nav .profile-avatar{
   font-size: 14px;
   font-weight: bold;
   border-style: none;
+  padding-left:10px;
 
 }
  input[placeholder]{
@@ -222,7 +234,8 @@ nav.nav-conversation{
   flex-direction: row;
   flex-wrap: nowrap;
   align-items: center;
-  padding-left: 20px;
+  padding: 5px 15px;
+
 
 }
 nav  .image-avatar{
@@ -253,12 +266,10 @@ nav .image-conversation img{
   flex-direction: column;
   justify-content: center;
   width:80%;
+  padding:10px;
+  height: 65px;
 }
 
-.name-conversation h5{
-  margin:0;
-  padding:5px 0;
-}
 
 
 .icones-conversation{
