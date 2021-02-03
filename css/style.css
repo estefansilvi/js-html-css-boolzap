@@ -155,8 +155,7 @@ nav .profile-avatar{
 
 }
  input[placeholder]{
-   color:lightgrey;
-   opacity: 0.6;
+   opacity:0.6;
  }
 /* end search bar */
 
@@ -327,7 +326,6 @@ nav .image-conversation img{
   flex-wrap: nowrap;
   align-items: center;
   padding-left: 20px;
-  z-index: -1;
   border-top: 1px solid grey;
 }
 
@@ -347,11 +345,11 @@ nav .image-conversation img{
   text-align: center;
 }
 .message-input{
-  width: 90%;
+  width: 100%;
   font-size: 25px;
-  border-radius: 25px;
-  border-style: none;
+  border-radius: 6px;
   padding-left: 20px;
+
 
 }
 

@@ -122,7 +122,7 @@ methods:{
 
     setTimeout(function() {
       activeContact.messages.push({
-        date: '10/01/2020 15:50:00',
+        date: ' 15:50:00',
         text: 'ok',
         status: 'received'
       });
