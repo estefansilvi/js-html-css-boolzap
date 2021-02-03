@@ -84,7 +84,13 @@
           </nav>
 
           <div class="chat-room">
-            <div v-for="element in contacts[indexAttuale].messages" :class="element.status">{{element.text}}
+            <div v-for="element in contacts[indexAttuale].messages" :class="element.status">
+              {{element.text}}
+              <i class="fas fa-angle-down cursor-pointer float-right dropdown" @click=""></i>
+              <div class="dropdown-content">
+                <p>Info</p>
+                <p>Delete message</p>
+              </div>
             </div>
           </div>
 

@@ -26,6 +26,10 @@
 .margin-0{
   margin:0;
 }
+
+.float-right{
+  float: right;
+}
 /* END UTILITY CLASS */
 
 .wrapper{
@@ -270,17 +274,41 @@ nav .image-conversation img{
   height: 65px;
 }
 
-
-
 .icones-conversation{
   float: left;
   height: 65px;
   overflow: hidden;
   display: flex;
   align-items: center;
-
   float: left;
 }
+
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: block;
+    position: absolute;
+    top:20px;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content p {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {background-color: #f1f1f1}
+
+.show {display:block;}
 /* end dati ricevente -chat- */
 
 

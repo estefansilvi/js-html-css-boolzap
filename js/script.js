@@ -6,7 +6,7 @@ var app = new Vue({
     sentTime: hour,
     utenteSelezionato: 'Michele',
     imageSelezionata:'_1',
-    ultimoAccesso:'16:15',
+    ultimoAccesso:'',
     indexAttuale:0,
     newMessage:'',
     searchContact:'',
@@ -139,12 +139,11 @@ methods:{
     if (name.toLowerCase().startsWith(nameSearch)) {
       return name.toLowerCase().startsWith(nameSearch)
     }
-  }
+  },
+
+
 }
 });
-
-
-
 
 
 Vue.config.devtools = true;
